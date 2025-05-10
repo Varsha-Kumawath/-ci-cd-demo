@@ -11,4 +11,4 @@ deploy:
   runs-on : ubuntu-latest
   steps:
     - name: deploy-step
-        run: echo "Deploying the deploy step"
+      run: echo "Deploying the deploy step"
