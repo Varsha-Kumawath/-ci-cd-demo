@@ -6,3 +6,9 @@ jobs:
     steps:
       - name: my-step
         run: echo "Hello World"
+deploy:
+  needs: my-job
+  runs-on : ubuntu-latest
+  steps:
+    - name: deploy-step
+        run: echo "Deploying the deploy step"
